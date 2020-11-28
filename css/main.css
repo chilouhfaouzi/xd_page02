@@ -1,20 +1,22 @@
 /* --------------------------
-:: Template Name: 
-:: Description: 
-:: Created: 25/11/2020  MM/DD/YYYY
+:: Template Name: Eventsia : Page 01
+:: Description: Page 01
+:: Created: 28/11/2020  MM/DD/YYYY
 -------------------------- */
 
 /* ----------------------
-
 [Table of contents]
 01.Base CSS
-02.Page CSS
+02.Header CSS
+03.Info user CSS
+04.People CSS
+05.Favoutite CSS
  --------------------------*/
 
 /*  ----------- 01- Start Base CSS  ----------- */
 
 :root {
-  --main-blue-color: #4885ed;
+  --main-black-color: #222;
 }
 ul {
   padding: 0;
@@ -46,9 +48,25 @@ main {
   height: 10px;
 }
 
+.main-cont {
+  position: relative;
+  width: 100% !important;
+  padding-bottom: 30px;
+  margin-top: -10px;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  padding: 0 20px;
+}
+
 /*  ----------- 01 -End Base CSS   -----------*/
 
-/* ----------- 02 -Start Page CSS   -----------*/
+/* ----------- 02 -Start Header CSS   -----------*/
 .header {
   background: url("../files/profile.png") no-repeat;
   background-size: cover;
@@ -77,27 +95,18 @@ main {
   bottom: 3%;
   left: 38%;
 }
+
+/* ----------- 02 -End Header CSS   -----------*/
+
+/* ----------- 02 -Start Info user CSS   -----------*/
+
 .img-back {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-.main-cont {
-  position: relative;
-  width: 100% !important;
-  padding-bottom: 30px;
-  margin-top: -10px;
-}
 
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-  padding: 0 20px;
-}
 .content .profile {
   overflow: hidden;
   margin-top: -86px;
@@ -141,7 +150,9 @@ main {
   width: 100%;
   line-height: 20px;
   border-radius: 8px;
+  box-shadow: 0px 1px 11px 2px #4c5fef;
 }
+
 .statics .btn img {
   width: 20px;
 }
@@ -149,7 +160,11 @@ main {
   margin: 25px 0;
   opacity: 0.8;
 }
-/*------------------Start people -------------- */
+
+/* ----------- 03 -End Info user CSS   -----------*/
+
+/* ----------- 04 -Start People CSS   -----------*/
+
 .people-section {
   padding-top: 20px;
   padding-right: 10px;
@@ -167,7 +182,7 @@ main {
   flex-wrap: nowrap;
   overflow-x: auto;
   width: auto;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .people-section .one-people {
   margin: 0 10px;
@@ -179,9 +194,10 @@ main {
 .people-section .one-people p {
   text-transform: capitalize;
 }
-/*------------------End people -------------- */
+/* ----------- 04 -End People CSS   -----------*/
 
-/* ------ new  */
+/* ----------- 05- Start Favoutite CSS   -----------*/
+
 .favourite {
   padding-top: 20px;
   text-align: left;
@@ -198,4 +214,4 @@ main {
   margin-right: 20px;
   cursor: pointer;
 }
-/* ----------- 02 -End Page CSS   -----------*/
+/* ----------- 05- End Favoutite CSS   -----------*/
