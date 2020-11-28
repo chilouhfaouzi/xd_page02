@@ -1,0 +1,201 @@
+/* --------------------------
+:: Template Name: 
+:: Description: 
+:: Created: 25/11/2020  MM/DD/YYYY
+-------------------------- */
+
+/* ----------------------
+
+[Table of contents]
+01.Base CSS
+02.Page CSS
+ --------------------------*/
+
+/*  ----------- 01- Start Base CSS  ----------- */
+
+:root {
+  --main-blue-color: #4885ed;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: inherit !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+li {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+main {
+  height: 100vh;
+}
+.back-grey {
+  background-color: #f4f6f9;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 10px;
+}
+
+/*  ----------- 01 -End Base CSS   -----------*/
+
+/* ----------- 02 -Start Page CSS   -----------*/
+.header {
+  background: url("../files/profile.png") no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  position: relative;
+  height: 200px;
+  color: #fff;
+}
+
+.header img {
+  top: 20px;
+  left: 20px;
+  width: 30px;
+}
+.header .edit {
+  top: 22px;
+  right: 20px;
+}
+.header img,
+.header .edit {
+  cursor: pointer;
+  position: absolute;
+}
+.info {
+  position: absolute;
+  bottom: 3%;
+  left: 38%;
+}
+.img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.main-cont {
+  position: relative;
+  width: 100% !important;
+  padding-bottom: 30px;
+  margin-top: -10px;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  padding: 0 20px;
+}
+.content .profile {
+  overflow: hidden;
+  margin-top: -86px;
+  width: 90px;
+  position: relative;
+}
+.content .profile img {
+  max-width: 100%;
+}
+.live {
+  position: absolute;
+  width: 50px;
+  bottom: 14px;
+  left: 22px;
+}
+.statics {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.statics .icons img {
+  width: 27px;
+  margin-top: 5px;
+}
+.stats {
+  padding-left: 5px;
+}
+.stats-info {
+  font-size: 12px;
+}
+.stats-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.statics .btn {
+  background-color: #4c5fef;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 100%;
+  line-height: 20px;
+  border-radius: 8px;
+}
+.statics .btn img {
+  width: 20px;
+}
+.bio {
+  margin: 25px 0;
+  opacity: 0.8;
+}
+/*------------------Start people -------------- */
+.people-section {
+  padding-top: 20px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.people-section .people-title span {
+  font-size: 11px;
+}
+.people-section .people-view span {
+  color: #4885ed;
+  font-size: 10px;
+}
+.people-section .people {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: auto;
+  padding: 10px 0;
+}
+.people-section .one-people {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.people-section .one-people img {
+  width: 55px;
+}
+.people-section .one-people p {
+  text-transform: capitalize;
+}
+/*------------------End people -------------- */
+
+/* ------ new  */
+.favourite {
+  padding-top: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+.places {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: auto;
+}
+.places img {
+  width: 130px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+/* ----------- 02 -End Page CSS   -----------*/
